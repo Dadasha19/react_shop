@@ -1,0 +1,18 @@
+footer {
+    float: left;
+    width: 100%;
+    align-items: flex-end;
+    max-width:1920px;
+    .footer_bottom {
+        float: left;
+        width: 100%;
+        background: #282828;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FEFEFE;
+        padding: 28px 0;
+        text-align: left;
+    }
+}

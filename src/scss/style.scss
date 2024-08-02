@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html { width: 100%; height: 100%; }
+body { position: relative; height: 100vh; -webkit-font-smoothing: antialiased; font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; line-height: 14px; color: #000; background: #FFFFFF; max-width:1920px; margin:0 auto;}
+.open { overflow: hidden;}
+::-webkit-input-placeholder { opacity:1;}
+::-moz-placeholder          { opacity:1;}
+:-moz-placeholder           { opacity:1;}
+:-ms-input-placeholder      { opacity:1;}
+::placeholder               { opacity:1;}
+a { 
+    text-decoration: underline;
+    outline: none !important;
+    &:hover { text-decoration: none;}
+}
+select, input { 
+  outline: none !important;
+}
+
+.main { flex-direction: column;  min-height: 100vh;}
+
+.container { width:100%; margin: 0 auto; max-width: none; padding: 0px 0;}
+
+@import "./block/header";
+@import "./block/content";
+@import "./block/products";
+@import "./block/basket";
+@import "./block/footer";
+
+
+
+@media only screen and (max-width: 1360px) {
+    .container { max-width:700px;}
+}
+@media only screen and (max-width: 700px) {
+    .container { max-width:350px;}
+}
+
+
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
